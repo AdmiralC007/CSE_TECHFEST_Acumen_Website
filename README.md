@@ -12,7 +12,7 @@ You can view the website live here:  (Currently Not Live Anymore)
 ---
 
 ## 📂 Project Structure
-
+```
 Acumen-WebSite-main/
 ├── css/ # All CSS styles for different pages
 ├── js/ # JavaScript files for interactivity
@@ -25,7 +25,7 @@ Acumen-WebSite-main/
 ├── requirements.txt # Python dependencies
 ├── vercel.json # Deployment configuration
 └── README.md # Project documentation
-
+```
 
 ---
 
