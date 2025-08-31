@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game - Acumen 2K25</title>
+    <link rel="stylesheet" href="../static/css/event.css">
+    <style>
+        .white-text {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="../static/images/logofinal.png" alt="Logo 1" class="nav-logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/#events">Events</a></li>
+                <li><a href="/sponsors">Sponsors</a></li>
+                <li><a href="/committee">Organizing Committee</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+        <main class="event-container">
+            <section class="event-content">
+                <div class="poster">
+                    <img src="../static/images/squid_gamepost.jpg" alt="Event Poster">
+                </div>
+                <div class="event-details">
+                    <h1>SQUID GAME</h1>
+                    <p class="event-description">
+                        <strong>Event Type:</strong> Elimination challenge<br>
+                        <strong>Location:</strong> Vasavi College of Engineering, Acumen Tech Fest<br>
+                        <strong>Date:</strong> 10th April, 2025<br>
+                        <strong>Entry Fee:</strong> ₹100 per head<br><br>
+                        Prepare to relive the intense challenges of Squid Game, where players battle it out in high-stakes traditional games. From Red Light, Green Light to Tug of War, only those who play smart and stay alert will survive each round. Do you have what it takes to be the last one standing?
+                    </p>
+                    <ul class="white-text">
+                        <li><strong>1. Red Light, Green Light</strong><br>
+                            🎵 A song will play, just like in Season 1 of Squid Game.<br>
+                            🟢 Players must run toward the finish line while the song plays.<br>
+                            🔴 Once the song stops, players must freeze instantly.<br>
+                            🚨 Any movement after the song stops = Elimination.
+                        </li>
+                        <li><strong>2. Tug of War</strong><br>
+                            💪 Teams compete in a classic tug-of-war battle.<br>
+                            ⚖ The team that pulls the other across the line wins.<br>
+                            🚨 The losing team is eliminated.
+                        </li>
+                        <li><strong>3. Sugar Candy Challenge</strong><br>
+                            🍬 Each player gets a traditional sugar candy (Dalgona) with a shape imprinted.<br>
+                            🔪 Players must carefully carve out the shape without breaking it.<br>
+                            🕒 Time-limited challenge! Breaking the candy = Elimination.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="rules">
+                <h2>Rules & Regulations</h2>
+                <ul>
+                    <li><strong>General Rules & Regulations:</strong><br>
+                        ✅ <strong>Elimination System:</strong> Failing a round results in elimination.<br>
+                        ✅ <strong>No Physical Contact:</strong> Players must follow safety rules.<br>
+                        ✅ <strong>Fair Play:</strong> Cheating or rule violations will lead to disqualification.<br>
+                        ✅ <strong>Judges’ Decision is Final:</strong> No disputes will be entertained.<br>
+                        Please Contact for further queries:<br>
+                        Saketh:9392881219<br>
+                        Aniketh:8309156050<br>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="register">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFdOf34Imn8htHnLh2hHBOyHvWVsnV4j-ebbZR_bnV5-QCtQ/viewform?usp=header" target="_blank" class="register-btn">REGISTER HERE</a>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/sponsors">Sponsors</a>
+                <a href="/#events">Events</a>
+                <a href="/committee">Organizing Committee</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: acumen2k25@gmail.com</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 VCE CSE ACUMEN 2K25. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="{{ url_for('static', filename='js/hamburger.js') }}"></script>
+</body>
+</html>

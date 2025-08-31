@@ -1,0 +1,15 @@
+[
+    { "image": "chaitanya.jpg", "name": "M Chaitanya", "description": "Head Organizer" },
+    { "image": "darpad.jpg", "name": "V Darpad Sai", "description": "Head Organizer" },
+    { "image": "akshith.jpg", "name": "Akshith B", "description": "Design Head" },
+    { "image": "bhanu.jpg", "name": "K Bhanu Prakash", "description": "Design Head" },
+    { "image": "anvesh.jpg", "name": "P Anvesh Reddy", "description": "Marketing Head" },
+    { "image": "navdeep.jpg", "name": "Navadeep Bakulapally", "description": "Cheif Editor" },
+    { "image": "supraja.jpg", "name": "Supraja Vadapalli", "description": "Marketing Head" },
+    { "image": "deepak.jpg", "name": "Sai Deepak Kalla", "description": "Non-Technical Head" },
+    { "image": "vaibhav.jpg", "name": "Sree Vaibhav Duvvuri", "description": "PR Head" },
+    { "image": "gabriel.jpg", "name": "Ryan Gabriel", "description": "Technical Head" },
+    { "image": "sarath.jpg", "name": "Sarath Kumar", "description": "Technical Head", "url":"committee/test" },
+    { "image": "deekshit.jpg", "name": "Deekshita Reddy", "description": "Design Head" },
+    { "image": "sujith.jpg", "name": "Sujith", "description": "Sponsorship Coordinator", "url":"committee/test" }
+]

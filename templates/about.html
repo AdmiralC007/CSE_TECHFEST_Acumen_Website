@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Acumen 2K25</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> <!-- Main Theme -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"> <!-- Page Specific -->
+</head>
+<body>
+    <script>
+        function openFullScreen(img) {
+            let modal = document.getElementById("fullScreenImage");
+            let fullImg = document.getElementById("fullImg");
+            fullImg.src = img.src;
+            modal.style.display = "flex";
+        }
+        
+        function closeFullScreen() {
+            document.getElementById("fullScreenImage").style.display = "none";
+        }
+        </script>
+        
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="/">
+                <img src="{{ url_for('static', filename='images/logofinal.png') }}" alt="Acumen Logo" class="logo">
+            </a>
+            <!-- <a href="/">
+                <img src="{{ url_for('static', filename='images/vlogo21.png') }}" alt="Second Logo" class="logo second-logo">
+            </a> -->
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/#events">Events</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
+            <li><a href="/committee">Organizing Committee</a></li>
+        </ul>
+    </nav>
+
+ <!-- About Section -->
+ <section class="about-section">
+    <img src="{{ url_for('static', filename='images/bg-img2.jpg') }}" alt="Background" class="section-bg">
+
+    <div class="about-container">
+        <!-- About Content at the Top -->
+        <div class="about-media">
+            <img src="{{ url_for('static', filename='images/final.jpg') }}" 
+                 alt="HoD Image" 
+                 class="about-image"
+                 onclick="openFullScreen(this)">
+        </div>
+        
+        <!-- Fullscreen Image Modal -->
+        <div id="fullScreenImage" class="modal" onclick="closeFullScreen()">
+            <img class="modal-content" id="fullImg">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                Acumen is the annual techfest of the CSE department at Vasavi College of Engineering. 
+                It brings together students, professionals, and tech enthusiasts for an exciting blend of 
+                competitions, workshops, and networking opportunities. With a cyberpunk theme, 
+                we aim to create a futuristic and immersive experience.
+            </p>
+        </div>
+    
+        <!-- Image Below -->
+        
+    </div>
+
+    <!-- Button to Events Page -->
+    <a href="/events" class="about-button">Explore Events</a>
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/sponsors">Sponsors</a>
+                <a href="/#events">Events</a>
+                <a href="/committee">Organizing Committee</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: acumen2k25@gmail.com</p>
+            </div>
+            <!-- <div class="footer-developers">
+                <p>Developed by <span class="highlight">V. Darpad Sai</span> and <span class="highlight">M. Chaitanya</span></p>
+            </div> -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 VCE CSE ACUMEN 2K25. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/hamburger.js') }}"></script>
+</body>
+</html>

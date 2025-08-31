@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Computer Society of India",
+        "image": "/static/images/csi.png",
+        "description": "The seed for the Computer Society of India (CSI) was first shown in the year 1965 with a handful of IT enthusiasts who were a computer user group and felt the need to organize tteir activities. They also wanted to share their knowledge and exchange ideas on what they felt was a fast emerging sector. Today the CSI takes pride in being the largest and most professionally managed association of and for IT professionals in India. The purposes of the Society are scientific and educational directed towards the advancement of the theory and practice of computer science and IT. "
+    },
+    {
+        "name": "Sri Lakshmi Interiors",
+        "image": "/static/images/sponsor1.jpg",
+        "description": "A leading interior design company in Hyderabad."
+    }
+    
+]

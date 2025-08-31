@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid cyan;
+    margin-top: 40px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    flex-grow: 1;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.title1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ff00ff;
+    margin-bottom: 30px;
+}
+
+/* ===== SPONSORS CONTAINER ===== */
+.sponsors-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+/* ===== SPONSORS CARDS ===== */
+.sponsor-card1 {
+    display: flex;
+    flex-direction: row; /* Image on the left, text on the right */
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid cyan;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px cyan;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sponsor-card1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px magenta;
+}
+
+.sponsor-card1 img {
+    width: 25vw; /* Adjust size */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.sponsor-details1 {
+    color: white;
+}
+
+.sponsor-details h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.sponsor-details p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.sponsor-title {
+    font-size: 1.5rem;
+    color: #ff00ff;
+}
+
+.sponsor-description {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* ===== FIXED FOOTER ===== */
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid cyan;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .highlight {
+    color: #ff00ff;
+    font-weight: bold;
+}
+
+/* ===== NAVBAR HOVER EFFECTS ===== */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s, border-bottom 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #ff00ff;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* ===== LOGO HOVER EFFECT ===== */
+.logo img {
+    height: 50px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.6));
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sponsor-card1 {
+        flex-direction: column; /* Stack image and text */
+        align-items: center;
+        text-align: center;
+    }
+
+    .sponsor-card1 img {
+        width: 80%; /* Adjust image size */
+        margin-bottom: 15px; /* Space between image and text */
+        margin-right: 0; /* Remove right margin */
+    }
+}

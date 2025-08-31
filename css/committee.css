@@ -1,0 +1,202 @@
+/* Background Image for Content Area (excluding footer) */
+body {
+    background: url('../images/bg-img6.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/* Vision Section */
+.vision-section {
+    text-align: center;
+    padding: 60px 20px;
+    color: #ff00ff;
+    margin-top: 10vh;
+}
+.vision-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+}
+.vision-video-container {
+    flex: 1;
+    max-width: 50%;
+}
+.vision-section h2{
+    margin: 20px;
+}
+
+.vision-video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+.vision-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+
+.vision-text h3 {
+    font-size: 1.8rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.vision-text p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+/* Faculty Section */
+.faculty-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.faculty-section h2{
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+.faculty-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faculty-card {
+    text-align: center;
+    border: 2px solid #ff00ff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+
+.faculty-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    /* border-radius: 50%; */
+}
+
+/* Student Coordinators */
+.committee-section1 {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.committee-container1 {
+    display: flex;
+    flex-wrap: wrap; /* Wrap into multiple rows */
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden; /* Remove scrolling effect */
+}
+
+.committee-card {
+    width: 220px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid #ff00ff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.committee-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.committee-name {
+    font-size: 1.2rem;
+    color: #ff00ff;
+    margin-top: 10px;
+}
+.committee-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff00ff, 0 0 50px #00ffff;
+}
+/* Exclude Footer from Background */
+.footer {
+    background: #0c0c0c; /* Keeps footer in solid neon black */
+}
+
+/* Apply Background Image with Reduced Brightness */
+.vision-section,
+.faculty-section,
+.committee-section {
+    position: relative;
+    background: url('../images/bg-img6.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding: 60px 20px;
+}
+
+/* Overlay to Reduce Brightness */
+.vision-section::before,
+.faculty-section::before,
+.committee-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay (adjust transparency as needed) */
+    z-index: 1;
+}
+
+/* Ensure Content Stays Above the Darkened Background */
+.vision-section h2,
+.faculty-section h2,
+.committee-section h2,
+.faculty-container,
+.committee-container {
+    position: relative;
+    z-index: 2;
+}
+
+.committee-section h2{
+    margin-bottom: 50px;
+}
+.committee-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff00ff, 0 0 50px #00ffff;
+}
+@media (max-width: 768px) {
+    .vision-container {
+        flex-direction: column;
+    }
+
+    .vision-video-container, .vision-text {
+        max-width: 100%;
+    }
+}
+.vision-image {
+    width: 50%;
+    border-radius: 10px;
+    height:300px;
+    /* z-index: 0; */
+    /* box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff; */
+}
+@media (max-width: 768px) {
+    .faculty-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faculty-card {
+        width: 80%; /* Adjust width for better appearance */
+        max-width: 300px; /* Prevents overly large cards */
+    }
+}

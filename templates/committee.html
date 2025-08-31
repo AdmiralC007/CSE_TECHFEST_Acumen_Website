@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizing Committee | Acumen 2K25</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/committee.css') }}"> <!-- Committee Specific CSS -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="/"><img src="{{ url_for('static', filename='images/logofinal.png') }}" alt="Acumen Logo" class="logo"></a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/#events">Events</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
+            <li><a href="/committee">Organizing Committee</a></li>
+        </ul>
+    </nav>
+
+    <!-- Our Vision Section -->
+    <section class="vision-section">
+        <h2>About Our HOD</h2>
+        <div class="vision-container">
+            <!-- Video on Left -->
+            <div class="vision-video-container">
+                <img src="{{ url_for('static', filename='images/hod.jpg') }}" alt="Our Vision Image" class="vision-image">
+            </div>
+            
+            <!-- Text on Right -->
+            <div class="vision-text">
+                <h3>Prof. T. Adilakshmi</h3>
+                <p>Dr. T. Adilakshmi has over 34 years of teaching and research experience, currently serving as the HoD of the CSE Department at Vasavi College of Engineering. She holds a B.Tech in ECE from VCE, an M.Tech in CSE from MIT Mangalore, and a Ph.D. in AI from Hyderabad Central University. A distinguished academician, she has guided multiple Ph.D. scholars and published 154 research papers in leading journals and conferences. Recognized with prestigious awards, including the Best HoD of the Year (2018) and Best Teacher Award (2005), she has played a pivotal role in enhancing research, placements, and industry collaboration, establishing the Industrial IoT Lab under AICTE MODROB.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Coordinators Section -->
+    <section class="faculty-section">
+        <h2>Faculty Coordinators</h2>
+         
+        
+        <div class="faculty-container">
+            <div class="faculty-card">
+                <img src="{{ url_for('static', filename='images/hod.jpg') }}" alt="Faculty 2">
+                <p class="faculty-name">Dr. T. Adilakshmi </p>
+            </div>
+            <div class="faculty-card">
+                <img src="{{ url_for('static', filename='images/komal.jpg') }}" alt="Faculty 2">
+                <p class="faculty-name">S. Komal Kour </p>
+            </div>
+           
+            <div class="faculty-card">
+                <img src="{{ url_for('static', filename='images/jalaja.jpg') }}" alt="Faculty 1">
+                <p class="faculty-name">Dr. T. Jalaja</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Student Coordinators Section -->
+    <section class="committee-section1">
+        <h2>Student Coordinators</h2>
+        <div class="committee-wrapper">
+            <div class="committee-container1"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/sponsors">Sponsors</a>
+                <a href="/#events">Events</a>
+                <a href="/committee">Organizing Committee</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: acumen2k25@gmail.com</p>
+            </div>
+            <!-- <div class="footer-developers">
+                <p>Developed by <span class="highlight">V. Darpad Sai</span> and <span class="highlight">M. Chaitanya</span></p>
+            </div> -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 VCE CSE ACUMEN 2K25. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/committee.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Relay - Acumen 2K25</title>
+    <link rel="stylesheet" href="../static/css/event.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="../static/images/logofinal.png" alt="Logo 1" class="nav-logo">
+                <!-- <img src="../static/images/vlogo21.png" alt="Logo 2" class="nav-logo"> -->
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/#events">Events</a></li>
+                <li><a href="/sponsors">Sponsors</a></li>
+                <li><a href="/committee">Organizing Committee</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<div class="wrapper">
+    <main class="event-container">
+        <section class="event-content">
+            <div class="poster">
+                <img src="../static/images/coderelay.jpg" alt="Event Poster">
+            </div>
+            <div class="event-details">
+                <h1>CODE RELAY</h1>
+                <p class="event-description">Just like in a relay race, your team will pass the coding baton to each member as you work together to solve a problem before time runs out. Quick thinking, communication, and strategy are your best tools for success!<br>
+
+                    🔧 How it works: ⏱ Pass the Baton – Teams of 3 members are randomly selected and must solve a coding problem in a set amount of time.<br>
+                    
+                    - Player A starts the coding race and works until 1/3 of the time has passed.<br>
+                    - Player B then takes over and codes until 2/3 of the time is up.<br>
+                    - Player C finishes the race, completing the problem by the end of the timer.<br> 
+                    
+                    Once the time is up, the code is tested for errors, I/O format, and runtime issues.<br>
+                    
+                    IMPORTANT NOTE :  <br>
+                    Players can only communicate amongst each other by leaving comments, and by no other means.<br>
+                    
+                    <b>Details:<br>
+                    - Team Size: 3 participants (randomly selected)<br>
+                    - Time Limit: Set time to complete the coding challenge<br>
+                    - Registration Fee: ₹150 per team<br>
+                    Contact Us:<br>
+                    Vijaya: 9177769970<br>
+                    Rohan: 8919415835<br>
+                    </p></b>
+            </div>
+        </section>
+
+        <section class="rules">
+            <h2>Rules & Regulations</h2>
+            <ul>
+                <li>1. Teams must work together, passing the keyboard after each member’s turn, to ensure the code is completed within the time limit.</li>
+                <li>2. Each player has a set portion of the time to contribute, and teamwork is essential to tackle the problem effectively. </li>
+                <li>3.  The final code will be checked for correctness, format, and runtime errors.
+                </li>
+            </ul>
+        </section>
+
+        <section class="register">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7fbB18OdeTyM6BeNkLpDIzYZo7nR3uuImBQSwxjWzxb1sg/viewform?usp=header" target="_blank" class="register-btn">REGISTER HERE</a>
+        </section>
+    </main>
+</div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/sponsors">Sponsors</a>
+                <a href="/#events">Events</a>
+                <a href="/committee">Organizing Committee</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: acumen2k25@gmail.com</p>
+            </div>
+            <!-- <div class="footer-developers">
+                <p>Developed by <span class="highlight">V. Darpad Sai</span> and <span class="highlight">M. Chaitanya</span></p>
+            </div> -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 VCE CSE ACUMEN 2K25. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="{{ url_for('static', filename='js/hamburger.js') }}"></script>
+</body>
+</html>

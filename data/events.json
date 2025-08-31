@@ -1,0 +1,116 @@
+[
+    {
+        "image": "POSTEROUTER.jpg",
+        "name": "Poster Presentation",
+        "description": "Showcase your research and creativity",
+        "url": "/events/poster_presentation"
+    },
+    {
+        "image": "paperouter.jpg",
+        "name": "Paper Presentation",
+        "description": "Unleash Your Ideas! Step into the world of innovation!",
+        "url": "/events/Paper_presentation"
+    },
+    {
+        "image": "project_expo.jpg",
+        "name": "Project Expo",
+        "description": " Get your projects ready and showcase them.",
+        "url": "/events/Project_Expo"
+    },
+    {
+        "image": "codeescapeouter.jpg",
+        "name": "CODE TO ESCAPE",
+        "description": "Get ready for an thrilling adventure.",
+        "url": "/events/Code_Sprint"
+    },
+    {
+        "image": "bidncodeouter.jpg",
+        "name": "Bid 'N' Code",
+        "description": "Are you ready for an electrifying battle where strategy meets coding? ",
+        "url": "/events/Bid_Code"
+    },
+    {
+        "image": "jailbreakouter.jpg",
+        "name": "Jail Break Challenge",
+        "description": "Trapped in a high-tech Jail, your only way out is through pure **wit and strategy!",
+        "url": "/events/jaibreak"
+    },
+    {
+        "image": "sharkouter.jpg",
+        "name": "Shark Tank Challenge",
+        "description": "Think you’ve got the brains to outsmart, outbid, and outpitch the competition? ",
+        "url": "/events/sharktank"
+    },
+    {
+        "image": "syntax_sleuth.jpg",
+        "name": "Syntax Sleuth Showdown",
+        "description": "🌟Acknowledge your coding skills ",
+        "url": "/events/Syntax"
+    },
+    {
+        "image": "aiimageouter.jpg",
+        "name": "AI Imagination",
+        "description": "Unleash your creativity and AI skills in AI Imagination.",
+        "url": "/events/ai_imagination"
+    },
+    {
+        "image": "CODE_RELAY.jpg",
+        "name": "Code Relay",
+        "description": "Just like in a relay race, your team will pass the coding baton to each member as you work together to solve a problem before time runs out.",
+        "url": "/events/Code_Relay"
+    },
+    {
+        "image": "treasureouter.jpg",
+        "name": "Treasure Hunt",
+        "description": "Step into a world of cryptic clues, hidden trails, and mind-bending puzzles.",
+        "url": "/events/Treasure_Hunt"
+    },
+    {
+        "image": "freefire.jpg",
+        "name": "Free Fire",
+        "description": "Survive,Battle,Conquer🔥",
+        "url": "/events/Make_a_Meme"
+    },
+    {
+        "image": "SHERLOCKOUT.jpg",
+        "name": "Sherlock Holmes",
+        "description": "Step into Sherlock’s shoes to solve a thrilling murder! ",
+        "url": "/events/Sherlock_Holmes"
+    },
+    {
+        "image": "movieouter.jpg",
+        "name": "The Movie Hunt",
+        "description": "Get ready for a fun movie challenge! ",
+        "url": "/events/Movie_Hunt"
+    },
+    {
+        "image": "callofdutyouter.jpg",
+        "name": "Call of Duty",
+        "description": "Get ready for an action-packed gaming challenge! ",
+        "url": "/events/Call_of_Duty"
+    },
+    {
+        "image": "auctionouter.jpg",
+        "name": "Auction War",
+        "description": "The Mystery Box Challenge",
+        "url": "/events/Auction_War"
+    },
+    {
+        "image": "squid_gameout.jpg",
+        "name": "Squid Game",
+        "description": "Prepare to relive the intense challenges of Squid Game",
+        "url": "/events/Squid_Game"
+    },
+    {
+        "image": "snakeouter.jpg",
+        "name": "Human Sized Snake & Ladder",
+        "description": "Get ready for a life-sized twist on the classic game! ",
+        "url": "/events/Illusion_Snake"
+    },
+    {
+        "image": "threeleggedout.jpg",
+        "name": "Three Legged Maze Race",
+        "description": "Assemble your best partner and sign up now! 🚀",
+        "url": "/events/Three_Legged_Maze"
+    }
+]

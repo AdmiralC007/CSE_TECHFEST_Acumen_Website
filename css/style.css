@@ -1,0 +1,1012 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Prevent Full Page Scrolling */
+html, body {
+    overflow-x: hidden !important;
+    background-color: #0c0c0c;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid #ff00ff;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+/* Navbar Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logos */
+}
+
+/* Logos Styling */
+.logo {
+    width: 100px; /* Adjust size */
+    height: auto;
+    /* border-radius: 10px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Second Logo (Adjust if needed) */
+.second-logo {
+    width: 140px; /* Slightly smaller if needed */
+    filter: invert(-1) opacity(0.5);
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff, 0 0 45px #ff00ff;
+}
+
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+    display: flex;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #ff00ff;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #ff00ff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Section Styling */
+.section {
+    position: relative;
+    padding: 100px 20px;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+/* Events Section Styling */
+.events-section {
+    padding: 60px 20px;
+    background-color: #0c0c0c;
+    position: relative;
+}
+/* Background Image Styling */
+.section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: -1; */
+    filter:brightness(50%);
+    opacity: 1; /* Ensure visibility */
+}
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Reduce overlay opacity for better visibility */
+    z-index: -1;
+}
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 5; /* Make sure it's above other sections */
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Pushes the image behind the content */
+    filter: brightness(70%); /* Ensure visibility */
+    background-size: cover; /* Ensure it covers the whole section */
+    background-position: center; /* Center the image */
+}
+
+
+.hero-text {
+    text-align: center;
+}
+
+.about-section,
+.events-section,
+.sponsors-section,
+.committee-section {
+     background-color: rgba(0, 0, 0, 0.9);
+    color: #00ffff;
+    text-align: center;
+    min-height: 100vh; 
+}
+
+/* Organizing Committee Section */
+.committee-section {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Background Image */
+.committee-section .section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* Scrolling Wrapper */
+.committee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* Committee Cards Scrolling Container */
+.committee-container {
+    display: flex;
+    gap: 30px;
+    animation: scrollCards 30s linear infinite; /* Continuous scrolling */
+}
+
+/* Committee Card */
+.committee-card {
+    width: 220px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid #ff00ff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    animation: glowEffect 1.5s infinite alternate ease-in-out;
+}
+
+/* Pulsating Glow Effect */
+@keyframes glowEffect {
+    0% { box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
+    50% { box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff; }
+    100% { box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
+}
+
+/* Card Hover Effect */
+.committee-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff00ff, 0 0 50px #00ffff;
+}
+
+/* Committee Image */
+.committee-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #00ffff;
+}
+
+/* Committee Name */
+.committee-name {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ff00ff;
+}
+
+/* Committee Description */
+.committee-description {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+/* Continuous Scrolling Animation */
+@keyframes scrollCards {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
+h1, h2 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Smooth scrolling */
+.scroll-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: #0c0c0c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+.scroll-btn:hover {
+    background-color: #00ffff;
+    color: #0c0c0c;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+}
+
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+        border-bottom-color: #ff00ff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+        border-bottom-color: #ff00ff;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+        border-bottom-color: #ff00ff;
+    }
+}
+.glitch-text {
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    animation: glitch 1.5s infinite alternate;
+}
+/* Countdown Timer */
+.countdown-timer {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    margin-top: 10px;
+}
+/* "Let's Go" Button */
+.go-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff00ff;
+    color: #0c0c0c;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    border: 2px solid #ff00ff;
+}
+.go-btn:hover {
+    background-color: #00ffff;
+    color: #0c0c0c;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #00ffff, 0 0 50px #ff00ff;
+}
+/* Glitch Animation */
+@keyframes glitch {
+    0% {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    }
+}
+
+/* Content Styling */
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: #ff00ff;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+/* Footer Styling */
+.footer {
+    position: relative;
+    padding: 40px 20px;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Background Image Styling */
+.footer-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section without distortion */
+    /* z-index: -1; */
+    filter: brightness(50%);
+}
+
+/* Neon Glow at Top of Footer */
+/* .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    border-radius: 4px;
+} */
+
+/* Footer Content Styling */
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Footer Links */
+.footer-links a {
+    color: #ff00ff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00ffff;
+}
+
+/* Contact and Developer Info */
+.footer-contact,
+.footer-developers,
+.footer-copyright {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* Highlight Developer Names */
+.highlight {
+    color: #ff00ff;
+    font-weight: bold;
+}
+
+/* Spacing and Positioning */
+.footer-contact p,
+.footer-developers p,
+.footer-copyright p {
+    margin: 5px 0;
+}
+/* Events Container - Horizontal Scroll */
+.events-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto !important; /* Forces scrollbar */
+    overflow-y: hidden;
+    white-space: nowrap; /* Prevents wrapping */
+    width: 95vw;
+    max-width: 100vw;
+    padding: 15px;
+    height: 380px; /* Adjusted for smaller cards */
+    scroll-snap-type: x mandatory;
+    border: 2px solid #ff00ff; /* Cyberpunk border */
+}
+
+/* Fix for WebKit Browsers (Chrome, Edge, Safari) */
+.events-container::-webkit-scrollbar {
+    height: 8px; /* Visible scrollbar */
+    background: #111; /* Dark cyberpunk background */
+}
+
+.events-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border-radius: 10px;
+    animation: neon-scroll 1.5s infinite alternate ease-in-out;
+}
+
+.events-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+}
+
+/* Scrollbar Animation */
+@keyframes neon-scroll {
+    0% { box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff; }
+    50% { box-shadow: 0 0 10px #ff00ff, 0 0 15px #00ffff; }
+    100% { box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff; }
+}
+
+/* Event Cards - Smaller & More Compact */
+.event-card {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid #ff00ff;
+    border-radius: 12px;
+    padding: 15px;
+    color: #ffffff;
+    min-width: 240px; /* Smaller card */
+    max-width: 250px;
+    flex: 0 0 auto; /* Prevents shrinking */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+/* Cyberpunk Hover Effect */
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+    border-color: #00ffff;
+}
+
+
+/* Event Image */
+.event-image {
+    width: 100%;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+/* Event Name */
+.event-name {
+    font-size: 1.2rem;
+    color: #ff00ff;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if title is too long */
+}
+
+
+.event-description-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #cccccc;
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; /* Start outside the card */
+    animation: marquee 15s linear infinite; /* Smooth continuous scrolling */
+}
+
+/* Keyframes for Left-to-Right Marquee */
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* Explore Button */
+.event-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.event-button:hover {
+    background-color: #00ffff;
+    color: #000;
+}
+/* Scroll Buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff00ff;
+    border: 2px solid #ff00ff;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+/* Left Button */
+.scroll-btn.left {
+    left: 10px;
+}
+
+/* Right Button */
+.scroll-btn.right {
+    right: 10px;
+}
+
+/* Hover Effect */
+.scroll-btn:hover {
+    background: #ff00ff;
+    color: #000;
+    border-color: #00ffff;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+/* About Section Layout */
+/* About Section */
+.about-section {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Background Image */
+.about-section .section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Adjust brightness for better visibility */
+    /* z-index: -1; Push background behind content */
+}
+
+/* Layout for Image & Description */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    z-index: 1; /* Ensures content is above background */
+}
+
+/* About Image */
+.about-image {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 12px;
+    /* box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff; */
+}
+
+/* About Description */
+.about-description {
+    width: 60%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #cccccc;
+    text-align: left;
+}
+/* Sponsors Container */
+.sponsors-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    z-index: 1; /* Ensures content is above background */
+}
+/* Sponsor Card (Circular Image) */
+.sponsor-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular Shape */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Sponsor Image */
+.sponsor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Hover Effect */
+.sponsor-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+}
+/* Sponsors Section */
+.sponsors-section {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sponsors-section .section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Adjust brightness for visibility */
+     /* Push background behind content */
+}
+
+/* Video Section Styling */
+/* Video Section with Neon Glow */
+.section-video {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Background Video */
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cyberpunk Neon Glow (Top & Bottom) */
+.section-video::before,
+.section-video::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(90deg, #00ffff, #0088ff);
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #0088ff;
+    border-radius: 5px;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+.section-video::before {
+    top: 0; /* Top glow */
+}
+
+.section-video::after {
+    bottom: 0; /* Bottom glow */
+}
+
+/* Glow Animation */
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 10px #00ffff, 0 0 20px #0088ff;
+    }
+    100% {
+        box-shadow: 0 0 15px #00ffff, 0 0 25px #0088ff;
+    }
+}
+
+/* Explore Button Styling */
+.explore-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff00ff;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    border: 2px solid #ff00ff;
+}
+
+.explore-btn:hover {
+    background-color: #00ffff;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #00ffff, 0 0 50px #ff00ff;
+}
+
+
+/* Sponsors Explore Button Styling */
+.sponsors-explore {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sponsors-explore-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    background: #ff00ff;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sponsors-explore-btn:hover {
+    background: #00ffff;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+}
+
+.sponsors-explore-btn {
+    display: inline-block; /* Ensure it's visible */
+    visibility: visible; /* Ensure it's not hidden */
+    opacity: 1; /* Make sure it's not transparent */
+}
+
+
+.sponsors-explore-btn {
+    position: relative;
+    z-index: 10; /* Higher than other elements */
+}
+
+/* ===== Explore More Button Container ===== */
+.committee-explore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Adjust spacing */
+}
+
+/* ===== Button Styling (Matching Sponsors Button) ===== */
+.committee-explore-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    background: #ff00ff; /* Neon pink */
+    border-radius: 8px;
+    text-decoration: none; /* Removes underline */
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; /* Neon glow */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* ===== Hover Effect (Cyberpunk Animation) ===== */
+.committee-explore-btn:hover {
+    background: #00ffff; /* Neon cyan */
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+}
+
+.committee-explore-btn {
+    display: inline-block; /* Ensure it's visible */
+    visibility: visible; /* Ensure it's not hidden */
+    opacity: 1; /* Make sure it's not transparent */
+}
+
+
+.committee-explore-btn {
+    position: relative;
+    z-index: 10; /* Higher than other elements */
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: left;
+    }}
+    .menu-icon {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .menu-icon {
+            display: block;
+        }
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: black;
+        }
+        .nav-links.active {
+            display: flex;
+        }
+        
+    }
+    section {
+        position: relative;
+        /* padding-bottom: 20px; */
+        /* margin-bottom: 20px; */
+    }
+    
+    section:not(footer)::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(to right, #ff00ff, #00ffff);
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .glitch-text {
+        font-size: 8vw; /* Adjust size dynamically */
+        text-align: center;
+        word-wrap: break-word; 
+        max-width: 90vw; /* Prevents clipping */
+        white-space: normal;
+    }
+    
+    /* Ensure proper responsiveness */
+    @media (max-width: 768px) {
+        .glitch-text {
+            font-size: 17vw; /* Reduce size on smaller screens */
+        }
+    }
+    /* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Push logo left, menu right */
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* Logo */
+.navbar .logo {
+    height: 50px; /* Adjust size if needed */
+    max-width: 150px;
+}
+
+/* Hamburger Menu */
+.navbar .hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Ensures items stay in a row */
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        order: -1; /* Keeps the logo on the left */
+    }
+
+    .navbar .hamburger {
+        display: block; /* Show menu icon */
+        order: 1; /* Keeps the hamburger on the right */
+    }
+}
+@keyframes scrollLoop {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Moves left continuously */
+}
+
+    
+    
+    

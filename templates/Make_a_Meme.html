@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire - Acumen 2K25</title>
+    <link rel="stylesheet" href="../static/css/event.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="../static/images/logofinal.png" alt="Logo 1" class="nav-logo">
+                <!-- <img src="../static/images/vlogo21.png" alt="Logo 2" class="nav-logo"> -->
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/#events">Events</a></li>
+                <li><a href="/sponsors">Sponsors</a></li>
+                <li><a href="/committee">Organizing Committee</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+        <main class="event-container">
+            <section class="event-content">
+                <div class="poster">
+                    <img src="../static/images/freefire.jpg" alt="Event Poster">
+                </div>
+                <div class="event-details">
+                    <h1>Free Fire</h1>
+                    <p class="event-description">
+                        Tournament Format:<br>
+                        • Mode: Squad<br>
+                        • Maps: Bermuda, Purgatory<br>
+                        • Elimination: First round -> Final round <br>
+                        <br>
+                        <strong>First Round:</strong><br>
+                        We divide the registered teams into groups (Like Group A and Group B) based on the number of teams registered. The groups will play one Bermuda match. From each group, top teams will qualify for the next round (No points calculation, just top teams from each will qualify).<br>
+                        <br>
+                        <strong>Final Round:</strong><br>
+                        The qualified teams will play two full maps (Bermuda and Purgatory). Top two teams will be decided based on points calculation.<br>
+                        <br>
+                        <strong>Points Calculation:</strong><br>
+                        Per kill - 1 point<br>
+                        Booyah - 12 points<br>
+                        #2 - 9 points<br>
+                        #3 - 8 points<br>
+                        #4 - 7 points<br>
+                        #5 - 6 points<br>
+                        #6 - 5 points<br>
+                        #7 - 4 points<br>
+                        #8 - 3 points<br>
+                        #9 - 2 points<br>
+                        #10 - 1 point<br>
+                        #11 and #12 - 0 points<br>
+                        <br>
+                        For example, if 20 teams are registered, we divide those teams into two groups (10 teams per group). The two groups will play a Bermuda match, then the top 6 teams in each group (based on position) will qualify for the final round. Then the competition continues as described in the Final Round.<br>
+                        <br>
+                        <strong>Contact Details:</strong><br>
+                        Poorna: 9030319262<br>
+                        Surya: 9010857447<br>
+                    </p>
+                </div>
+            </section>
+            
+            <section class="rules">
+                <h2>Rules & Regulations</h2>
+                <ul>
+                    <li>1. No hacking or unfair gameplay.</li>
+                    <li>2. No emulators allowed.</li>
+                    <li>3. No team up (if we see any team ups, both teams will get disqualified). Play fairly!</li>
+                    <li>4. Entry Fee: 200 per team.</li>
+                </ul>
+            </section>
+            
+            <section class="register">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScCKN9FX8llmaYP18vmiRoc2E8TmseTGF9mm-Sk5REiHoFY-Q/viewform?usp=header" target="_blank" class="register-btn">REGISTER HERE</a>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/sponsors">Sponsors</a>
+                <a href="/#events">Events</a>
+                <a href="/committee">Organizing Committee</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us: acumen2k25@gmail.com</p>
+            </div>
+            <!-- <div class="footer-developers">
+                <p>Developed by <span class="highlight">V. Darpad Sai</span> and <span class="highlight">M. Chaitanya</span></p>
+            </div> -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 VCE CSE ACUMEN 2K25. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="{{ url_for('static', filename='js/hamburger.js') }}"></script>
+</body>
+</html>
